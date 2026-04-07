@@ -1,0 +1,7 @@
+{
+  "name": "Unha de Gata - Alongamento de Unhas",
+  "description": "Site premium focado em conversão para especialistas em alongamento de unhas e nail design.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

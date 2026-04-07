@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Roller Coaster';
+  src: url('./assets/fonts/Roller Coaster.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Great+Vibes&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-cursive: "Great Vibes", cursive;
+  --font-roller: "Roller Coaster", "Pacifico", cursive;
+
+  --color-brand-pink: #fce4ec;
+  --color-brand-nude: #f5ebe0;
+  --color-brand-gold: #d4af37;
+  --color-brand-dark: #1a1a1a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-brand-dark antialiased;
+  }
+}
+
+@utility glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+@utility btn-primary {
+  @apply bg-brand-dark text-white px-8 py-4 rounded-full font-medium transition-all hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2;
+}
+
+@utility btn-secondary {
+  @apply bg-transparent border-2 border-brand-dark text-brand-dark px-8 py-4 rounded-full font-medium transition-all hover:bg-brand-dark hover:text-white active:scale-95 flex items-center justify-center gap-2;
+}
+
+@utility linktree-btn {
+  @apply w-full glass-card p-5 rounded-2xl flex items-center justify-between hover:border-brand-gold/50 transition-all hover:translate-y-[-2px];
+}
