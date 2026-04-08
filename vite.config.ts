@@ -9,7 +9,7 @@ export default defineConfig(({mode}) => {
   return {
     plugins: [react(), tailwindcss(), viteSingleFile()],
     build: {
-      assetsInlineLimit: 1000000, // 1MB to inline the font
+      assetsInlineLimit: 0, // Don't inline external assets (Google Drive URLs)
     },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),

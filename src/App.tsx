@@ -143,12 +143,12 @@ const Hero = () => (
         className="relative"
       >
         <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-white bg-black">
-          <video 
-            src="/hero-video.mp4" 
+          <video
+            src="https://res.cloudinary.com/dzpoourup/video/upload/q_auto/f_auto/v1775616506/hero-video_ep5sbv.mp4"
             className="w-full h-full object-cover"
-            autoPlay 
-            loop 
-            muted 
+            autoPlay
+            loop
+            muted
             playsInline
           />
         </div>
@@ -173,25 +173,25 @@ const Services = () => {
     { 
       title: "Alongamento em Gel", 
       desc: "Unhas resistentes com aspecto natural e brilho duradouro.", 
-      price: "A partir de R$ 150",
+      price: "A partir de R$ 180",
       img: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=500&auto=format&fit=crop"
     },
     { 
       title: "Alongamento em Fibra", 
       desc: "A técnica mais moderna para unhas finas e extremamente resistentes.", 
-      price: "A partir de R$ 180",
+      price: "A partir de R$ 230",
       img: "https://images.unsplash.com/photo-1604654894611-6973b376cbde?q=80&w=500&auto=format&fit=crop"
     },
     { 
       title: "Esmaltação em Gel", 
       desc: "Cor perfeita por até 20 dias sem descascar.", 
       price: "A partir de R$ 80",
-      img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop"
+      img: "https://images.unsplash.com/photo-1772322586711-22f84f5f3432?q=80&w=500&auto=format&fit=crop"
     },
     { 
       title: "Nail Art Personalizada", 
       desc: "Desenhos exclusivos, pedrarias e tendências do Instagram.", 
-      price: "Sob consulta",
+      price: "Incluso em todos os procedimentos",
       img: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=500&auto=format&fit=crop"
     },
   ];
@@ -263,14 +263,14 @@ const Gallery = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {[
-          "/IMG_5367.jpg",
-          "/IMG_5593.jpg",
-          "/IMG_7647.jpg",
-          "/IMG_7667.jpg",
-          "/IMG_7780.jpg",
-          "/IMG_8037.jpg",
-          "/IMG_8048.jpg",
-          "/IMG_8059.jpg"
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616434/IMG_8059_rdqlbs.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616434/IMG_8048_kjp3en.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_8037_npkd1f.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_7780_xznjep.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_5593_jsgibk.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_7667_gdm4zw.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_7647_napapw.jpg",
+          "https://res.cloudinary.com/dzpoourup/image/upload/q_auto/f_auto/v1775616433/IMG_5367_fxfiqe.jpg"
         ].map((img, idx) => (
           <motion.a
             key={idx}
@@ -506,11 +506,10 @@ export default function App() {
             viewport={{ once: true }}
             className="relative"
           >
-            <img 
-              src="/studio.jpg" 
-              alt="Ambiente Unha de Gata Premium" 
+            <img
+              src="https://res.cloudinary.com/dzpoourup/image/upload/f_auto,q_auto/about_cfystl"
+              alt="Ambiente Unha de Gata Premium"
               className="rounded-3xl shadow-2xl"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-brand-pink rounded-full -z-10" />
           </motion.div>
